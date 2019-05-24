@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package echo;
+
+service Echo {
+  // A simple RPC.
+  rpc simple(Message) returns (Message) {}
+
+  // A server-to-client streaming RPC.
+  rpc serverStream(Message) returns (stream Message) {}
+
+  // A client-to-server streaming RPC.
+  rpc clientStream(stream Message) returns (Message) {}
+
+  // A Bidirectional streaming RPC.
+  rpc biStream(stream Message) returns (stream Message) {}
+}
+
+message Message {
+  string msg = 1;
+  string repeats = 2;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "grpc-echo-example",
+  "version": "1.0.0",
+  "description": "Simple gRPC echo example of all kinds of methods",
+  "main": "grpc-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node ./grpc-server.js",
+    "client": "node ./grpc-client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaimendel/grpc-echo-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaimendel/grpc-echo-example/issues"
+  },
+  "homepage": "https://github.com/shaimendel/grpc-echo-example#readme",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.1",
+    "grpc": "^1.21.0"
+  }
+}
