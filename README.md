@@ -21,13 +21,13 @@ How to run: `npm start client simple`.
 
 ## Client streams messages
 The client sends the same message multiple times (hard coded currently) as a stream, the server returns one message in the end as a response: the amount of messages it received, alongside the original message.
-How to tun: `npm start client clientStream`.
+How to run: `npm start client clientStream`.
 
 ## Server streams messages
-The client sends the message once, while the server sends it back multiple times (hard coded currently) as a stream
-How to tun: `npm start client serverStream`.
+The client sends the message once, while the server sends it back multiple times (hard coded currently) as a stream.
+How to run: `npm start client serverStream`.
 
 ## Bidirectional streams
 The client sends a stream of messages, the server sends that message back for each message the client sends.
 Both directions are sent in streams.
-How to tun: `npm start client biStream`.
+How to run: `npm start client biStream`.
